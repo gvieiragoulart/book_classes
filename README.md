@@ -1,4 +1,4 @@
-CLone the project.
+Clone the project.
 ```bash
 git clone https://github.com/gvieiragoulart/book_classes.git
 ```
@@ -12,3 +12,5 @@ docker-compose up -d --build
 ```
 
 The documentation will be on http://localhost:8000/docs/index.html
+
+The project will need ports 8000,9000 and 3306
