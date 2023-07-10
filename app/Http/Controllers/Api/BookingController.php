@@ -13,6 +13,15 @@ use Symfony\Component\HttpFoundation\Response;
 
 class BookingController extends Controller
 {
+    /*
+    * Create a new booking
+    *
+    * header Accept application/json
+    * header Content-Type application/json
+    * @queryParam class_id string required
+    * body name string required
+    * body date date required. Example: 12/12/2021
+    */
     public function store(string $id, CreateBookingRequest $request, CreateBookingUseCase $useCase)
     {        
         $booking = $useCase->execute(

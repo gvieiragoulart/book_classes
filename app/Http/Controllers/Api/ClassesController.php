@@ -15,11 +15,16 @@ use Core\UseCase\Classes\UpdateClassesUseCase;
 use Core\UseCase\DTO\Classes\Create\CreateClassesInputDto;
 use Core\UseCase\DTO\Classes\FindAll\FindAllClassesInputDto;
 use Core\UseCase\DTO\Classes\Update\UpdateClassesInputDto;
-use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 
 class ClassesController extends Controller
 {
+    /*
+    * Search all classes
+    *
+    * header Accept application/json
+    * header Content-Type application/json
+    */
     public function index(FindAllClassesUseCase $useCase)
     { 
         $classes = $useCase->execute(
@@ -39,6 +44,17 @@ class ClassesController extends Controller
         );
     }
 
+    /*
+    * Create a new class
+    *
+    * header Accept application/json
+    * header Content-Type application/json
+    * body name string required
+    * body description string required
+    * body start_date date required. Example: 12/12/2021
+    * body end_date date required. Example: 12/12/2021
+    * body capacity integer required
+    */
     public function store(CreateClassesRequest $request, CreateClassesUseCase $useCase)
     {
         $classes = $useCase->execute(
@@ -58,6 +74,13 @@ class ClassesController extends Controller
         );
     }
 
+    /*
+    * Search a class
+    *
+    * @queryParam id required The id of the class.
+    * header Accept application/json
+    * header Content-Type application/json
+    */
     public function show(string $id, FindClassUseCase $useCase)
     {
         $class = $useCase->execute($id);
@@ -69,6 +92,18 @@ class ClassesController extends Controller
         );
     }
 
+    /*
+    * Update a class
+    *
+    * @queryParam id required The id of the class.
+    * header Accept application/json
+    * header Content-Type application/json
+    * body name string 
+    * body description string 
+    * body start_date date. Example: 12/12/2021
+    * body end_date date. Example: 12/12/2021 
+    * body capacity integer 
+    */
     public function update(string $id, UpdateClassesRequest $request, UpdateClassesUseCase $useCase)
     {
         $classes = $useCase->execute(
@@ -89,6 +124,13 @@ class ClassesController extends Controller
         );
     }
 
+    /*
+    * Delete a class
+    *
+    * @queryParam id required The id of the class.
+    * header Accept application/json
+    * header Content-Type application/json
+    */
     public function destroy(string $id, DeleteClassesUseCase $useCase)
     {
         $useCase->execute($id);

@@ -34,9 +34,11 @@ class UpdateClassesRequest extends FormRequest
             ],
             'start_date' => [
                 'date',
+                'date_format:d/m/Y',
             ],
             'end_date' => [
                 'date',
+                'date_format:d/m/Y',
             ],
             'capacity' => [
                 'integer',

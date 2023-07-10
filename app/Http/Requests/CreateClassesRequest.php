@@ -37,10 +37,12 @@ class CreateClassesRequest extends FormRequest
             'start_date' => [
                 'required',
                 'date',
+                'date_format:d/m/Y',
             ],
             'end_date' => [
                 'required',
                 'date',
+                'date_format:d/m/Y',
             ],
             'capacity' => [
                 'required',

@@ -1,0 +1,429 @@
+{
+    "variable": [
+        {
+            "id": "baseUrl",
+            "key": "baseUrl",
+            "type": "string",
+            "name": "string",
+            "value": "http:\/\/localhost"
+        }
+    ],
+    "info": {
+        "name": "Laravel",
+        "_postman_id": "91258179-7e1f-4845-8659-f0fe323a1db9",
+        "description": "",
+        "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
+    },
+    "item": [
+        {
+            "name": "Endpoints",
+            "description": "",
+            "item": [
+                {
+                    "name": "GET api\/classes",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/classes",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/classes"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "59"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "{\"message\":\"Classes retrieved successfully!\",\"total\":5,\"nextPageUrl\":\"\",\"content\":[{\"id\":\"227d6055-4fe8-4793-93e2-b5efcd4ae262\",\"name\":\"Classe updated\",\"description\":\"Descri\\u00e7\\u00e3o teste\",\"start_date\":\"02\\\/09\\\/2023\",\"end_date\":\"10\\\/12\\\/2023\",\"capacity\":30,\"bookings\":[{\"id\":\"0a3aaca2-4435-4d9c-a075-ee90b0ca8f97\",\"class_id\":\"227d6055-4fe8-4793-93e2-b5efcd4ae262\",\"name\":\"Gabriel\",\"date\":\"11\\\/11\\\/2023\"},{\"id\":\"5b0c85de-e1a6-4876-b409-b1b886588fd1\",\"class_id\":\"227d6055-4fe8-4793-93e2-b5efcd4ae262\",\"name\":\"Gabriel\",\"date\":\"11\\\/11\\\/2023\"},{\"id\":\"bf5c029c-d20a-4635-ad26-9c7b6efa8f26\",\"class_id\":\"227d6055-4fe8-4793-93e2-b5efcd4ae262\",\"name\":\"Gabriel\",\"date\":\"11\\\/11\\\/2023\"}]},{\"id\":\"a094d309-6974-405b-8559-fe0f4684c92c\",\"name\":\"Classe teste\",\"description\":\"Descri\\u00e7\\u00e3o teste\",\"start_date\":\"02\\\/09\\\/2023\",\"end_date\":\"10\\\/12\\\/2023\",\"capacity\":30,\"bookings\":[]},{\"id\":\"ee440f38-073a-426f-885d-6a9a64de4295\",\"name\":\"Classe teste\",\"description\":\"Descri\\u00e7\\u00e3o teste\",\"start_date\":\"02\\\/09\\\/2023\",\"end_date\":\"10\\\/12\\\/2023\",\"capacity\":30,\"bookings\":[]},{\"id\":\"4e7820c1-ef98-41e7-bbf1-93ae783cd99f\",\"name\":\"Classe teste\",\"description\":\"Descri\\u00e7\\u00e3o teste\",\"start_date\":\"02\\\/09\\\/2023\",\"end_date\":\"10\\\/12\\\/2023\",\"capacity\":30,\"bookings\":[]},{\"id\":\"cc2c4407-2730-4d8c-b3c0-c1c9cd55332c\",\"name\":\"Classe teste\",\"description\":\"Descri\\u00e7\\u00e3o teste\",\"start_date\":\"02\\\/09\\\/2023\",\"end_date\":\"10\\\/12\\\/2023\",\"capacity\":30,\"bookings\":[]}]}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "POST api\/classes",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/classes",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/classes"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"qnfjubaasuyvihnjutmdnfr\",\"description\":\"Sequi inventore ut cum dolore rem eveniet vel.\",\"start_date\":\"2023-07-10T03:49:13\",\"end_date\":\"2023-07-10T03:49:13\",\"capacity\":10}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET api\/classes\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/classes\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/classes\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "est",
+                                    "description": "The ID of the class."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "58"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 404,
+                            "body": "{\"error\":\"Contact not found\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "PUT api\/classes\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/classes\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/classes\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "harum",
+                                    "description": "The ID of the class."
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"dy\",\"description\":\"Et et voluptatem voluptatem.\",\"start_date\":\"2023-07-10T03:49:13\",\"end_date\":\"2023-07-10T03:49:13\",\"capacity\":17}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "DELETE api\/classes\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/classes\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/classes\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "voluptate",
+                                    "description": "The ID of the class."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST api\/classes\/{id}\/bookings",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/classes\/:id\/bookings",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/classes\/:id\/bookings",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "molestiae",
+                                    "description": "The ID of the class."
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"jafqtezzpnatcn\",\"date\":\"2023-07-10T03:49:13\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET api\/classes\/{id}\/bookings\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/classes\/:id\/bookings\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/classes\/:id\/bookings\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "laudantium",
+                                    "description": "The ID of the class."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "57"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "{\"message\":\"Hello World!\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "PUT api\/classes\/{id}\/bookings\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/classes\/:id\/bookings\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/classes\/:id\/bookings\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "harum",
+                                    "description": "The ID of the class."
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "DELETE api\/classes\/{id}\/bookings\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/classes\/:id\/bookings\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/classes\/:id\/bookings\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "necessitatibus",
+                                    "description": "The ID of the class."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        }
+    ],
+    "auth": {
+        "type": "noauth"
+    }
+}
