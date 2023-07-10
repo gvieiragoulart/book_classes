@@ -4,11 +4,9 @@ namespace App\Repositories\Eloquent;
 
 use App\Models\Booking as ModelsBooking;
 use App\Models\Classes;
-use App\Repositories\Presenters\PaginationPresenter;
 use Core\Domain\Entity\Booking;
 use Core\Domain\Exception\NotFoundException;
 use Core\Domain\Repository\BookingRepositoryInterface;
-use Core\Domain\Repository\PaginationInterface;
 
 class BookingRepository implements BookingRepositoryInterface
 {
@@ -63,42 +61,6 @@ class BookingRepository implements BookingRepositoryInterface
         }
 
         return $this->mapModelToEntity($booking);
-    }
-
-    public function paginate(string $userId, string $filter = '', string $order = 'DESC', int $page = 1, int $totalPage = 15): PaginationInterface
-    {
-        $query = $this->model->orderBy('created_at', $order);
-        $query->where('user_id', $userId);
-        if ($filter) {
-            $query->where(function ($query) use ($filter) {
-                $query->orWhere('name', 'like', '%'.$filter.'%');
-                $query->orWhere('second_name', 'like', '%'.$filter.'%');
-                $query->orWhere('email', 'like', '%'.$filter.'%');
-                $query->orWhere('number', 'like', '%'.$filter.'%');
-            });
-        }
-
-        $pagination =  $query->paginate(
-            perPage: $totalPage,
-            page: $page
-        );
-
-        return new PaginationPresenter($pagination);
-    }
-
-    public function findAll(string $filter = '', string $order = 'DESC'): array
-    {
-        $query = $this->model->orderBy('created_at', $order);
-        if ($filter) {
-            $query->where(function ($query) use ($filter) {
-                $query->orWhere('name', 'like', '%'.$filter.'%');
-                $query->orWhere('second_name', 'like', '%'.$filter.'%');
-                $query->orWhere('email', 'like', '%'.$filter.'%');
-                $query->orWhere('phone', 'like', '%'.$filter.'%');
-            });
-        }
-
-        return $query->get()->all();
     }
 
     private function mapModelToEntity(ModelsBooking $model): Booking

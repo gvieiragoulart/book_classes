@@ -8,7 +8,7 @@ use Symfony\Component\HttpFoundation\Response;
 
 class NotFoundException extends Exception
 {
-    public function __construct(string $message = "Contact not found",
+    public function __construct(string $message = "not found",
     int $code = Response::HTTP_NOT_FOUND,
     Throwable $previous = null)
     {

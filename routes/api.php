@@ -16,4 +16,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::apiResource('classes', ClassesController::class);
-Route::apiResource('classes/{id}/bookings', BookingController::class);
+Route::apiResource('classes/{class_id}/bookings', BookingController::class);
