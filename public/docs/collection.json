@@ -10,7 +10,7 @@
     ],
     "info": {
         "name": "Laravel",
-        "_postman_id": "91258179-7e1f-4845-8659-f0fe323a1db9",
+        "_postman_id": "5a749b26-1336-4894-8c4a-590d8d7812da",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -70,7 +70,7 @@
                                 }
                             ],
                             "code": 200,
-                            "body": "{\"message\":\"Classes retrieved successfully!\",\"total\":5,\"nextPageUrl\":\"\",\"content\":[{\"id\":\"227d6055-4fe8-4793-93e2-b5efcd4ae262\",\"name\":\"Classe updated\",\"description\":\"Descri\\u00e7\\u00e3o teste\",\"start_date\":\"02\\\/09\\\/2023\",\"end_date\":\"10\\\/12\\\/2023\",\"capacity\":30,\"bookings\":[{\"id\":\"0a3aaca2-4435-4d9c-a075-ee90b0ca8f97\",\"class_id\":\"227d6055-4fe8-4793-93e2-b5efcd4ae262\",\"name\":\"Gabriel\",\"date\":\"11\\\/11\\\/2023\"},{\"id\":\"5b0c85de-e1a6-4876-b409-b1b886588fd1\",\"class_id\":\"227d6055-4fe8-4793-93e2-b5efcd4ae262\",\"name\":\"Gabriel\",\"date\":\"11\\\/11\\\/2023\"},{\"id\":\"bf5c029c-d20a-4635-ad26-9c7b6efa8f26\",\"class_id\":\"227d6055-4fe8-4793-93e2-b5efcd4ae262\",\"name\":\"Gabriel\",\"date\":\"11\\\/11\\\/2023\"}]},{\"id\":\"a094d309-6974-405b-8559-fe0f4684c92c\",\"name\":\"Classe teste\",\"description\":\"Descri\\u00e7\\u00e3o teste\",\"start_date\":\"02\\\/09\\\/2023\",\"end_date\":\"10\\\/12\\\/2023\",\"capacity\":30,\"bookings\":[]},{\"id\":\"ee440f38-073a-426f-885d-6a9a64de4295\",\"name\":\"Classe teste\",\"description\":\"Descri\\u00e7\\u00e3o teste\",\"start_date\":\"02\\\/09\\\/2023\",\"end_date\":\"10\\\/12\\\/2023\",\"capacity\":30,\"bookings\":[]},{\"id\":\"4e7820c1-ef98-41e7-bbf1-93ae783cd99f\",\"name\":\"Classe teste\",\"description\":\"Descri\\u00e7\\u00e3o teste\",\"start_date\":\"02\\\/09\\\/2023\",\"end_date\":\"10\\\/12\\\/2023\",\"capacity\":30,\"bookings\":[]},{\"id\":\"cc2c4407-2730-4d8c-b3c0-c1c9cd55332c\",\"name\":\"Classe teste\",\"description\":\"Descri\\u00e7\\u00e3o teste\",\"start_date\":\"02\\\/09\\\/2023\",\"end_date\":\"10\\\/12\\\/2023\",\"capacity\":30,\"bookings\":[]}]}",
+                            "body": "{\"message\":\"Classes retrieved successfully!\",\"total\":6,\"nextPageUrl\":\"\",\"content\":[{\"id\":\"962e8b38-dc42-411b-b511-770289acd5e3\",\"name\":\"Classe teste\",\"description\":\"Descri\\u00e7\\u00e3o teste\",\"start_date\":\"08\\\/12\\\/2023\",\"end_date\":\"09\\\/12\\\/2023\",\"capacity\":30,\"bookings\":[]},{\"id\":\"227d6055-4fe8-4793-93e2-b5efcd4ae262\",\"name\":\"Classe updated\",\"description\":\"Descri\\u00e7\\u00e3o teste\",\"start_date\":\"02\\\/09\\\/2023\",\"end_date\":\"10\\\/12\\\/2023\",\"capacity\":30,\"bookings\":[{\"id\":\"0a3aaca2-4435-4d9c-a075-ee90b0ca8f97\",\"class_id\":\"227d6055-4fe8-4793-93e2-b5efcd4ae262\",\"name\":\"Gabriel\",\"date\":\"11\\\/11\\\/2023\"},{\"id\":\"5b0c85de-e1a6-4876-b409-b1b886588fd1\",\"class_id\":\"227d6055-4fe8-4793-93e2-b5efcd4ae262\",\"name\":\"Gabriel\",\"date\":\"11\\\/11\\\/2023\"},{\"id\":\"bf5c029c-d20a-4635-ad26-9c7b6efa8f26\",\"class_id\":\"227d6055-4fe8-4793-93e2-b5efcd4ae262\",\"name\":\"Gabriel\",\"date\":\"11\\\/11\\\/2023\"}]},{\"id\":\"a094d309-6974-405b-8559-fe0f4684c92c\",\"name\":\"Classe teste\",\"description\":\"Descri\\u00e7\\u00e3o teste\",\"start_date\":\"02\\\/09\\\/2023\",\"end_date\":\"10\\\/12\\\/2023\",\"capacity\":30,\"bookings\":[]},{\"id\":\"ee440f38-073a-426f-885d-6a9a64de4295\",\"name\":\"Classe teste\",\"description\":\"Descri\\u00e7\\u00e3o teste\",\"start_date\":\"02\\\/09\\\/2023\",\"end_date\":\"10\\\/12\\\/2023\",\"capacity\":30,\"bookings\":[]},{\"id\":\"4e7820c1-ef98-41e7-bbf1-93ae783cd99f\",\"name\":\"Classe teste\",\"description\":\"Descri\\u00e7\\u00e3o teste\",\"start_date\":\"02\\\/09\\\/2023\",\"end_date\":\"10\\\/12\\\/2023\",\"capacity\":30,\"bookings\":[]},{\"id\":\"cc2c4407-2730-4d8c-b3c0-c1c9cd55332c\",\"name\":\"Classe teste\",\"description\":\"Descri\\u00e7\\u00e3o teste\",\"start_date\":\"02\\\/09\\\/2023\",\"end_date\":\"10\\\/12\\\/2023\",\"capacity\":30,\"bookings\":[]}]}",
                             "name": ""
                         }
                     ]
@@ -97,7 +97,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"qnfjubaasuyvihnjutmdnfr\",\"description\":\"Sequi inventore ut cum dolore rem eveniet vel.\",\"start_date\":\"2023-07-10T03:49:13\",\"end_date\":\"2023-07-10T03:49:13\",\"capacity\":10}"
+                            "raw": "{\"name\":\"wyhsrhpinplrwgtv\",\"description\":\"Voluptatem minima eos ad.\",\"start_date\":\"10\\\/07\\\/2023\",\"end_date\":\"10\\\/07\\\/2023\",\"capacity\":18}"
                         },
                         "description": "",
                         "auth": {
@@ -118,7 +118,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "est",
+                                    "value": "iusto",
                                     "description": "The ID of the class."
                                 }
                             ]
@@ -182,7 +182,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "harum",
+                                    "value": "animi",
                                     "description": "The ID of the class."
                                 }
                             ]
@@ -200,7 +200,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"dy\",\"description\":\"Et et voluptatem voluptatem.\",\"start_date\":\"2023-07-10T03:49:13\",\"end_date\":\"2023-07-10T03:49:13\",\"capacity\":17}"
+                            "raw": "{\"name\":\"ahdvnyoxnteviulvuhbpurj\",\"description\":\"Exercitationem non repellendus odio.\",\"start_date\":\"10\\\/07\\\/2023\",\"end_date\":\"10\\\/07\\\/2023\",\"capacity\":5}"
                         },
                         "description": "",
                         "auth": {
@@ -221,7 +221,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "voluptate",
+                                    "value": "ducimus",
                                     "description": "The ID of the class."
                                 }
                             ]
@@ -257,7 +257,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "molestiae",
+                                    "value": "est",
                                     "description": "The ID of the class."
                                 }
                             ]
@@ -275,7 +275,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"jafqtezzpnatcn\",\"date\":\"2023-07-10T03:49:13\"}"
+                            "raw": "{\"name\":\"qdkxazxbtx\",\"date\":\"2023-07-10T03:52:52\"}"
                         },
                         "description": "",
                         "auth": {
@@ -296,7 +296,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "laudantium",
+                                    "value": "dignissimos",
                                     "description": "The ID of the class."
                                 }
                             ]
@@ -360,7 +360,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "harum",
+                                    "value": "ut",
                                     "description": "The ID of the class."
                                 }
                             ]
@@ -396,7 +396,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "necessitatibus",
+                                    "value": "odit",
                                     "description": "The ID of the class."
                                 }
                             ]

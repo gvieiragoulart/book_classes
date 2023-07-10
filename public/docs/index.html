@@ -183,9 +183,18 @@ access-control-allow-origin: *
 
 <code class="language-json" style="max-height: 300px;">{
     &quot;message&quot;: &quot;Classes retrieved successfully!&quot;,
-    &quot;total&quot;: 5,
+    &quot;total&quot;: 6,
     &quot;nextPageUrl&quot;: &quot;&quot;,
     &quot;content&quot;: [
+        {
+            &quot;id&quot;: &quot;962e8b38-dc42-411b-b511-770289acd5e3&quot;,
+            &quot;name&quot;: &quot;Classe teste&quot;,
+            &quot;description&quot;: &quot;Descri&ccedil;&atilde;o teste&quot;,
+            &quot;start_date&quot;: &quot;08/12/2023&quot;,
+            &quot;end_date&quot;: &quot;09/12/2023&quot;,
+            &quot;capacity&quot;: 30,
+            &quot;bookings&quot;: []
+        },
         {
             &quot;id&quot;: &quot;227d6055-4fe8-4793-93e2-b5efcd4ae262&quot;,
             &quot;name&quot;: &quot;Classe updated&quot;,
@@ -342,11 +351,11 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"qnfjubaasuyvihnjutmdnfr\",
-    \"description\": \"Sequi inventore ut cum dolore rem eveniet vel.\",
-    \"start_date\": \"2023-07-10T03:49:13\",
-    \"end_date\": \"2023-07-10T03:49:13\",
-    \"capacity\": 10
+    \"name\": \"wyhsrhpinplrwgtv\",
+    \"description\": \"Voluptatem minima eos ad.\",
+    \"start_date\": \"10\\/07\\/2023\",
+    \"end_date\": \"10\\/07\\/2023\",
+    \"capacity\": 18
 }"
 </code></pre></div>
 
@@ -362,11 +371,11 @@ const headers = {
 };
 
 let body = {
-    "name": "qnfjubaasuyvihnjutmdnfr",
-    "description": "Sequi inventore ut cum dolore rem eveniet vel.",
-    "start_date": "2023-07-10T03:49:13",
-    "end_date": "2023-07-10T03:49:13",
-    "capacity": 10
+    "name": "wyhsrhpinplrwgtv",
+    "description": "Voluptatem minima eos ad.",
+    "start_date": "10\/07\/2023",
+    "end_date": "10\/07\/2023",
+    "capacity": 18
 };
 
 fetch(url, {
@@ -455,10 +464,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="name"                data-endpoint="POSTapi-classes"
-               value="qnfjubaasuyvihnjutmdnfr"
+               value="wyhsrhpinplrwgtv"
                data-component="body">
     <br>
-<p>Must be at least 3 characters. Must not be greater than 100 characters. Example: <code>qnfjubaasuyvihnjutmdnfr</code></p>
+<p>Must be at least 3 characters. Must not be greater than 100 characters. Example: <code>wyhsrhpinplrwgtv</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>description</code></b>&nbsp;&nbsp;
@@ -466,10 +475,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="description"                data-endpoint="POSTapi-classes"
-               value="Sequi inventore ut cum dolore rem eveniet vel."
+               value="Voluptatem minima eos ad."
                data-component="body">
     <br>
-<p>Must be at least 3 characters. Must not be greater than 100 characters. Example: <code>Sequi inventore ut cum dolore rem eveniet vel.</code></p>
+<p>Must be at least 3 characters. Must not be greater than 100 characters. Example: <code>Voluptatem minima eos ad.</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>start_date</code></b>&nbsp;&nbsp;
@@ -477,10 +486,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="start_date"                data-endpoint="POSTapi-classes"
-               value="2023-07-10T03:49:13"
+               value="10/07/2023"
                data-component="body">
     <br>
-<p>Must be a valid date. Example: <code>2023-07-10T03:49:13</code></p>
+<p>Must be a valid date. Must be a valid date in the format <code>d/m/Y</code>. Example: <code>10/07/2023</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>end_date</code></b>&nbsp;&nbsp;
@@ -488,10 +497,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="end_date"                data-endpoint="POSTapi-classes"
-               value="2023-07-10T03:49:13"
+               value="10/07/2023"
                data-component="body">
     <br>
-<p>Must be a valid date. Example: <code>2023-07-10T03:49:13</code></p>
+<p>Must be a valid date. Must be a valid date in the format <code>d/m/Y</code>. Example: <code>10/07/2023</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>capacity</code></b>&nbsp;&nbsp;
@@ -499,10 +508,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="capacity"                data-endpoint="POSTapi-classes"
-               value="10"
+               value="18"
                data-component="body">
     <br>
-<p>Example: <code>10</code></p>
+<p>Example: <code>18</code></p>
         </div>
         </form>
 
@@ -519,14 +528,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/classes/est" \
+    --get "http://localhost/api/classes/iusto" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/classes/est"
+    "http://localhost/api/classes/iusto"
 );
 
 const headers = {
@@ -637,10 +646,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="id"                data-endpoint="GETapi-classes--id-"
-               value="est"
+               value="iusto"
                data-component="url">
     <br>
-<p>The ID of the class. Example: <code>est</code></p>
+<p>The ID of the class. Example: <code>iusto</code></p>
             </div>
                     </form>
 
@@ -657,22 +666,22 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "http://localhost/api/classes/harum" \
+    "http://localhost/api/classes/animi" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"dy\",
-    \"description\": \"Et et voluptatem voluptatem.\",
-    \"start_date\": \"2023-07-10T03:49:13\",
-    \"end_date\": \"2023-07-10T03:49:13\",
-    \"capacity\": 17
+    \"name\": \"ahdvnyoxnteviulvuhbpurj\",
+    \"description\": \"Exercitationem non repellendus odio.\",
+    \"start_date\": \"10\\/07\\/2023\",
+    \"end_date\": \"10\\/07\\/2023\",
+    \"capacity\": 5
 }"
 </code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/classes/harum"
+    "http://localhost/api/classes/animi"
 );
 
 const headers = {
@@ -681,11 +690,11 @@ const headers = {
 };
 
 let body = {
-    "name": "dy",
-    "description": "Et et voluptatem voluptatem.",
-    "start_date": "2023-07-10T03:49:13",
-    "end_date": "2023-07-10T03:49:13",
-    "capacity": 17
+    "name": "ahdvnyoxnteviulvuhbpurj",
+    "description": "Exercitationem non repellendus odio.",
+    "start_date": "10\/07\/2023",
+    "end_date": "10\/07\/2023",
+    "capacity": 5
 };
 
 fetch(url, {
@@ -778,10 +787,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="id"                data-endpoint="PUTapi-classes--id-"
-               value="harum"
+               value="animi"
                data-component="url">
     <br>
-<p>The ID of the class. Example: <code>harum</code></p>
+<p>The ID of the class. Example: <code>animi</code></p>
             </div>
                             <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
         <div style=" padding-left: 28px;  clear: unset;">
@@ -790,10 +799,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="name"                data-endpoint="PUTapi-classes--id-"
-               value="dy"
+               value="ahdvnyoxnteviulvuhbpurj"
                data-component="body">
     <br>
-<p>Must be at least 3 characters. Must not be greater than 100 characters. Example: <code>dy</code></p>
+<p>Must be at least 3 characters. Must not be greater than 100 characters. Example: <code>ahdvnyoxnteviulvuhbpurj</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>description</code></b>&nbsp;&nbsp;
@@ -801,10 +810,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="description"                data-endpoint="PUTapi-classes--id-"
-               value="Et et voluptatem voluptatem."
+               value="Exercitationem non repellendus odio."
                data-component="body">
     <br>
-<p>Must be at least 3 characters. Must not be greater than 100 characters. Example: <code>Et et voluptatem voluptatem.</code></p>
+<p>Must be at least 3 characters. Must not be greater than 100 characters. Example: <code>Exercitationem non repellendus odio.</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>start_date</code></b>&nbsp;&nbsp;
@@ -812,10 +821,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="start_date"                data-endpoint="PUTapi-classes--id-"
-               value="2023-07-10T03:49:13"
+               value="10/07/2023"
                data-component="body">
     <br>
-<p>Must be a valid date. Example: <code>2023-07-10T03:49:13</code></p>
+<p>Must be a valid date. Must be a valid date in the format <code>d/m/Y</code>. Example: <code>10/07/2023</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>end_date</code></b>&nbsp;&nbsp;
@@ -823,10 +832,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="end_date"                data-endpoint="PUTapi-classes--id-"
-               value="2023-07-10T03:49:13"
+               value="10/07/2023"
                data-component="body">
     <br>
-<p>Must be a valid date. Example: <code>2023-07-10T03:49:13</code></p>
+<p>Must be a valid date. Must be a valid date in the format <code>d/m/Y</code>. Example: <code>10/07/2023</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>capacity</code></b>&nbsp;&nbsp;
@@ -834,10 +843,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="capacity"                data-endpoint="PUTapi-classes--id-"
-               value="17"
+               value="5"
                data-component="body">
     <br>
-<p>Example: <code>17</code></p>
+<p>Example: <code>5</code></p>
         </div>
         </form>
 
@@ -854,14 +863,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "http://localhost/api/classes/voluptate" \
+    "http://localhost/api/classes/ducimus" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/classes/voluptate"
+    "http://localhost/api/classes/ducimus"
 );
 
 const headers = {
@@ -954,10 +963,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="id"                data-endpoint="DELETEapi-classes--id-"
-               value="voluptate"
+               value="ducimus"
                data-component="url">
     <br>
-<p>The ID of the class. Example: <code>voluptate</code></p>
+<p>The ID of the class. Example: <code>ducimus</code></p>
             </div>
                     </form>
 
@@ -974,19 +983,19 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
-    "http://localhost/api/classes/molestiae/bookings" \
+    "http://localhost/api/classes/est/bookings" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"jafqtezzpnatcn\",
-    \"date\": \"2023-07-10T03:49:13\"
+    \"name\": \"qdkxazxbtx\",
+    \"date\": \"2023-07-10T03:52:52\"
 }"
 </code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/classes/molestiae/bookings"
+    "http://localhost/api/classes/est/bookings"
 );
 
 const headers = {
@@ -995,8 +1004,8 @@ const headers = {
 };
 
 let body = {
-    "name": "jafqtezzpnatcn",
-    "date": "2023-07-10T03:49:13"
+    "name": "qdkxazxbtx",
+    "date": "2023-07-10T03:52:52"
 };
 
 fetch(url, {
@@ -1085,10 +1094,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="id"                data-endpoint="POSTapi-classes--id--bookings"
-               value="molestiae"
+               value="est"
                data-component="url">
     <br>
-<p>The ID of the class. Example: <code>molestiae</code></p>
+<p>The ID of the class. Example: <code>est</code></p>
             </div>
                             <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
         <div style=" padding-left: 28px;  clear: unset;">
@@ -1097,10 +1106,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="name"                data-endpoint="POSTapi-classes--id--bookings"
-               value="jafqtezzpnatcn"
+               value="qdkxazxbtx"
                data-component="body">
     <br>
-<p>Must be at least 3 characters. Must not be greater than 100 characters. Example: <code>jafqtezzpnatcn</code></p>
+<p>Must be at least 3 characters. Must not be greater than 100 characters. Example: <code>qdkxazxbtx</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>date</code></b>&nbsp;&nbsp;
@@ -1108,10 +1117,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="date"                data-endpoint="POSTapi-classes--id--bookings"
-               value="2023-07-10T03:49:13"
+               value="2023-07-10T03:52:52"
                data-component="body">
     <br>
-<p>Must be a valid date. Example: <code>2023-07-10T03:49:13</code></p>
+<p>Must be a valid date. Example: <code>2023-07-10T03:52:52</code></p>
         </div>
         </form>
 
@@ -1128,14 +1137,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/classes/laudantium/bookings/laudantium" \
+    --get "http://localhost/api/classes/dignissimos/bookings/dignissimos" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/classes/laudantium/bookings/laudantium"
+    "http://localhost/api/classes/dignissimos/bookings/dignissimos"
 );
 
 const headers = {
@@ -1246,10 +1255,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="id"                data-endpoint="GETapi-classes--id--bookings--id-"
-               value="laudantium"
+               value="dignissimos"
                data-component="url">
     <br>
-<p>The ID of the class. Example: <code>laudantium</code></p>
+<p>The ID of the class. Example: <code>dignissimos</code></p>
             </div>
                     </form>
 
@@ -1266,14 +1275,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "http://localhost/api/classes/harum/bookings/harum" \
+    "http://localhost/api/classes/ut/bookings/ut" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/classes/harum/bookings/harum"
+    "http://localhost/api/classes/ut/bookings/ut"
 );
 
 const headers = {
@@ -1370,10 +1379,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="id"                data-endpoint="PUTapi-classes--id--bookings--id-"
-               value="harum"
+               value="ut"
                data-component="url">
     <br>
-<p>The ID of the class. Example: <code>harum</code></p>
+<p>The ID of the class. Example: <code>ut</code></p>
             </div>
                     </form>
 
@@ -1390,14 +1399,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "http://localhost/api/classes/necessitatibus/bookings/necessitatibus" \
+    "http://localhost/api/classes/odit/bookings/odit" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/classes/necessitatibus/bookings/necessitatibus"
+    "http://localhost/api/classes/odit/bookings/odit"
 );
 
 const headers = {
@@ -1490,10 +1499,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="id"                data-endpoint="DELETEapi-classes--id--bookings--id-"
-               value="necessitatibus"
+               value="odit"
                data-component="url">
     <br>
-<p>The ID of the class. Example: <code>necessitatibus</code></p>
+<p>The ID of the class. Example: <code>odit</code></p>
             </div>
                     </form>
 

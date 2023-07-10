@@ -22,9 +22,17 @@ paths:
                 type: object
                 example:
                   message: 'Classes retrieved successfully!'
-                  total: 5
+                  total: 6
                   nextPageUrl: ''
                   content:
+                    -
+                      id: 962e8b38-dc42-411b-b511-770289acd5e3
+                      name: 'Classe teste'
+                      description: 'Descrição teste'
+                      start_date: 08/12/2023
+                      end_date: 09/12/2023
+                      capacity: 30
+                      bookings: []
                     -
                       id: 227d6055-4fe8-4793-93e2-b5efcd4ae262
                       name: 'Classe updated'
@@ -86,13 +94,21 @@ paths:
                     example: 'Classes retrieved successfully!'
                   total:
                     type: integer
-                    example: 5
+                    example: 6
                   nextPageUrl:
                     type: string
                     example: ''
                   content:
                     type: array
                     example:
+                      -
+                        id: 962e8b38-dc42-411b-b511-770289acd5e3
+                        name: 'Classe teste'
+                        description: 'Descrição teste'
+                        start_date: 08/12/2023
+                        end_date: 09/12/2023
+                        capacity: 30
+                        bookings: []
                       -
                         id: 227d6055-4fe8-4793-93e2-b5efcd4ae262
                         name: 'Classe updated'
@@ -153,55 +169,25 @@ paths:
                       properties:
                         id:
                           type: string
-                          example: 227d6055-4fe8-4793-93e2-b5efcd4ae262
+                          example: 962e8b38-dc42-411b-b511-770289acd5e3
                         name:
                           type: string
-                          example: 'Classe updated'
+                          example: 'Classe teste'
                         description:
                           type: string
                           example: 'Descrição teste'
                         start_date:
                           type: string
-                          example: 02/09/2023
+                          example: 08/12/2023
                         end_date:
                           type: string
-                          example: 10/12/2023
+                          example: 09/12/2023
                         capacity:
                           type: integer
                           example: 30
                         bookings:
                           type: array
-                          example:
-                            -
-                              id: 0a3aaca2-4435-4d9c-a075-ee90b0ca8f97
-                              class_id: 227d6055-4fe8-4793-93e2-b5efcd4ae262
-                              name: Gabriel
-                              date: 11/11/2023
-                            -
-                              id: 5b0c85de-e1a6-4876-b409-b1b886588fd1
-                              class_id: 227d6055-4fe8-4793-93e2-b5efcd4ae262
-                              name: Gabriel
-                              date: 11/11/2023
-                            -
-                              id: bf5c029c-d20a-4635-ad26-9c7b6efa8f26
-                              class_id: 227d6055-4fe8-4793-93e2-b5efcd4ae262
-                              name: Gabriel
-                              date: 11/11/2023
-                          items:
-                            type: object
-                            properties:
-                              id:
-                                type: string
-                                example: 0a3aaca2-4435-4d9c-a075-ee90b0ca8f97
-                              class_id:
-                                type: string
-                                example: 227d6055-4fe8-4793-93e2-b5efcd4ae262
-                              name:
-                                type: string
-                                example: Gabriel
-                              date:
-                                type: string
-                                example: 11/11/2023
+                          example: []
       tags:
         - Endpoints
       security: []
@@ -223,23 +209,23 @@ paths:
                 name:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 100 characters.'
-                  example: qnfjubaasuyvihnjutmdnfr
+                  example: wyhsrhpinplrwgtv
                 description:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 100 characters.'
-                  example: 'Sequi inventore ut cum dolore rem eveniet vel.'
+                  example: 'Voluptatem minima eos ad.'
                 start_date:
                   type: string
-                  description: 'Must be a valid date.'
-                  example: '2023-07-10T03:49:13'
+                  description: 'Must be a valid date. Must be a valid date in the format <code>d/m/Y</code>.'
+                  example: 10/07/2023
                 end_date:
                   type: string
-                  description: 'Must be a valid date.'
-                  example: '2023-07-10T03:49:13'
+                  description: 'Must be a valid date. Must be a valid date in the format <code>d/m/Y</code>.'
+                  example: 10/07/2023
                 capacity:
                   type: integer
                   description: ''
-                  example: 10
+                  example: 18
               required:
                 - name
                 - description
@@ -287,23 +273,23 @@ paths:
                 name:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 100 characters.'
-                  example: dy
+                  example: ahdvnyoxnteviulvuhbpurj
                 description:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 100 characters.'
-                  example: 'Et et voluptatem voluptatem.'
+                  example: 'Exercitationem non repellendus odio.'
                 start_date:
                   type: string
-                  description: 'Must be a valid date.'
-                  example: '2023-07-10T03:49:13'
+                  description: 'Must be a valid date. Must be a valid date in the format <code>d/m/Y</code>.'
+                  example: 10/07/2023
                 end_date:
                   type: string
-                  description: 'Must be a valid date.'
-                  example: '2023-07-10T03:49:13'
+                  description: 'Must be a valid date. Must be a valid date in the format <code>d/m/Y</code>.'
+                  example: 10/07/2023
                 capacity:
                   type: integer
                   description: ''
-                  example: 17
+                  example: 5
       security: []
     delete:
       summary: ''
@@ -319,7 +305,7 @@ paths:
         in: path
         name: id
         description: 'The ID of the class.'
-        example: est
+        example: iusto
         required: true
         schema:
           type: string
@@ -342,11 +328,11 @@ paths:
                 name:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 100 characters.'
-                  example: jafqtezzpnatcn
+                  example: qdkxazxbtx
                 date:
                   type: string
                   description: 'Must be a valid date.'
-                  example: '2023-07-10T03:49:13'
+                  example: '2023-07-10T03:52:52'
               required:
                 - name
                 - date
@@ -356,7 +342,7 @@ paths:
         in: path
         name: id
         description: 'The ID of the class.'
-        example: molestiae
+        example: est
         required: true
         schema:
           type: string
@@ -405,7 +391,7 @@ paths:
         in: path
         name: id
         description: 'The ID of the class.'
-        example: laudantium
+        example: dignissimos
         required: true
         schema:
           type: string
